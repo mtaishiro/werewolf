@@ -22,4 +22,3 @@ playerjob = {}
 for i in range(int(playernum)):
     rannum = rannumlist[i]
     playerjob[playerlist[i]] = joblist[rannum]
-
