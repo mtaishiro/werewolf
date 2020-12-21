@@ -4,6 +4,7 @@ import random
 playernum = input("type the number of players. It has to be between 5 and 8: ")
 
 #ask for the job and make a list out of it
+print("These are the jobs available for our game: villager, werewolf, fortune teller, knight, psychopath, shaman, hangman.")
 joblist = input ("type the jobs you want in the game, separated with a comma and space: ").split(", ")
 
 #
@@ -15,7 +16,6 @@ for x in joblist:
     else:
         villagercount += 1
 
-print(wolfcount)
 #ask for player name
 playerlist = []
 for i in range (int(playernum)):
