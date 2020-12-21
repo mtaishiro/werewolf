@@ -6,6 +6,16 @@ playernum = input("type the number of players. It has to be between 5 and 8: ")
 #ask for the job and make a list out of it
 joblist = input ("type the jobs you want in the game, separated with a comma and space: ").split(", ")
 
+#
+wolfcount = 0
+villagercount = 0
+for x in joblist:
+    if (x == "werewolf"):
+        wolfcount += 1
+    else:
+        villagercount += 1
+
+print(wolfcount)
 #ask for player name
 playerlist = []
 for i in range (int(playernum)):
